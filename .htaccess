@@ -1,0 +1,4 @@
+Options -Indexes
+
+ErrorDocument 403 https://tp2.iha.unistra.fr/~fromageat/SAE203_FROMAGEAT_JULIE/403.php
+ErrorDocument 404 https://tp2.iha.unistra.fr/~fromageat/SAE203_FROMAGEAT_JULIE/404.php

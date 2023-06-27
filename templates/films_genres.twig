@@ -1,0 +1,21 @@
+{% extends "page_films.twig" %}
+{% block maincontent %}
+{% set genres = genres|length > 0 ? genres[0] : null %}
+<div>
+
+	<h1><u>Films</u>:</h1>
+	<div>
+		{% for film in films %}
+		<div>
+			<a href="films_article.php?id={{ film.id_film }}">{{ film.titre_film }}
+				<img src="{{film.image_film}}" alt="iamge du film {{ film.titre_film }}">
+			</a>
+			<p>{{film.synopsis_film}}</p>
+		</div>
+		{% else %}
+		<p class="aucun">Aucun livre à afficher</p>
+		{% endfor %}
+	</div>
+</div>
+
+{% endblock maincontent %}
